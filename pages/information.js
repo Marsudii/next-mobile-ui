@@ -1,6 +1,9 @@
 import Footer from "../src/components/Footer";
 import Head from "next/head";
 import Image from "next/image";
+
+import Link from 'next/link';
+
 export default function information() {
   return (
     <>
@@ -17,7 +20,7 @@ export default function information() {
 
       <div className="product-header">
         <div className="flex">
-            <a href="/"><span className="las la-angle-left"></span></a>
+            <Link href="/"><p><span className="las la-angle-left"></span></p></Link>
         </div>
         <div className="product-img">
         
