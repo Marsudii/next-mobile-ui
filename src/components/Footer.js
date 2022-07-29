@@ -1,4 +1,6 @@
 
+import Link from 'next/link';
+
 
 export default function Footer() {
   return (
@@ -8,38 +10,42 @@ export default function Footer() {
                 <div className="nav-items">
                    
                     <div className="nav-item">
-                    <a href="/story">
-                        <span className="las la-book"></span>
-                        <p>Story </p>
-                        </a>
+                    <Link href="/story" >
+                 
+                   
+                        <p> <span className="las la-book"></span> Story </p>
+                  
+                    </Link>
                     </div>
                     
                     <div className="nav-item">
-                    <a href="/category">
-                        <span className="las la-list"></span>
-                        <p>Kategori</p>
-                        </a>
+                    <Link href="/category">
+                 
+                   
+                 <p> <span className="las la-list"></span> Kategori </p>
+           
+             </Link>
                     </div>
                 </div>
                 <div className="nav-item-main">
-                <a href="/">
+                <Link href="/">
                     <div>
                         <span className="las la-home"></span>
                     </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="nav-items">
                     <div className="nav-item">
-                    <a href="/quiz">
-                        <span className="las la-file-alt"></span>
-                        <p>Kuis</p>
-                        </a>
+                    <Link href="/quiz">
+                       
+                        <p> <span className="las la-file-alt"></span> Kuis</p>
+                        </Link>
                     </div>
                     <div className="nav-item">
-                    <a href="/information">
-                        <span className="las la-exclamation-circle"></span>
-                        <p>Info</p>
-                        </a>
+                    <Link href="/information">
+                       
+                        <p> <span className="las la-exclamation-circle"></span> Info</p>
+                        </Link>
                     </div>
                 </div>
             </div>
