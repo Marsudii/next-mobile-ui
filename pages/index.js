@@ -3,6 +3,8 @@ import Image from "next/image";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import style from "../styles/Home.module.css";
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -22,7 +24,7 @@ export default function Home() {
         <div className="categories section-wrapper">
           <div className="flex-header">
             <h2>Categories</h2>
-            <a href="/kategori">See all</a>
+            <Link href="/kategori">See all</Link>
           </div>
           {/* START KATEGORI */}
           <div className="items">
@@ -126,7 +128,7 @@ export default function Home() {
         <div className="popular section-wrapper">
           <div className="flex-header">
             <h2>Popular deals</h2>
-            <a href="">See all</a>
+            <Link href="">See all</Link>
           </div>
           <div className="items">
             <div className="popular-item">
